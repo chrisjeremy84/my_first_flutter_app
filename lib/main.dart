@@ -14,9 +14,12 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.blue[300],
       ),
       body: Center(
-          child: Image(
-        image: NetworkImage(
-            'https://images.pexels.com/photos/4553619/pexels-photo-4553619.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'),
+          child: IconButton(
+        icon: Icon(Icons.chat_bubble_outline_rounded),
+        onPressed: () {
+          print("You clicked the button");
+        },
+        iconSize: 35,
       )),
       backgroundColor: Colors.red[200],
     );
